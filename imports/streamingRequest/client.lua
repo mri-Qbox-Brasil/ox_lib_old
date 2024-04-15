@@ -9,6 +9,7 @@
 ---@param ... any
 ---Used internally.
 function lib.streamingRequest(request, hasLoaded, assetType, asset, timeout, ...)
+    if timeout == nil then timeout = 5000 end
     if timeout < 5000 then timeout = 5000 end --murai
     if hasLoaded(asset) then return asset end
 
