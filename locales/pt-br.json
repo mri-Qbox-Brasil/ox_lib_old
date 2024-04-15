@@ -1,0 +1,21 @@
+{
+  "language": "Português",
+  "ui": {
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "more": "Mais...",
+    "settings": {
+      "locale": "Mudar idioma",
+      "locale_description": "Idioma atual: ${language} (%s)",
+      "notification_audio": "Áudio de notificação"
+    }
+  },
+  "open_radial_menu": "Abrir radial menu",
+  "cancel_progress": "Cancelar barra de progresso",
+  "txadmin_announcement": "Anuncio do servidor por %s",
+  "txadmin_dm": "Mensagem direta de %s",
+  "txadmin_warn": "Você foi avisado por %s",
+  "txadmin_warn_content": "%s  \nAção ID: %s",
+  "txadmin_scheduledrestart": "Restart programado"
+}
