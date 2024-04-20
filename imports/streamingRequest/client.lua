@@ -9,15 +9,16 @@
 ---@param ... any
 ---Used internally.
 function lib.streamingRequest(request, hasLoaded, assetType, asset, timeout, ...)
-    if timeout == nil then timeout = 5000 end
-    if timeout < 5000 then timeout = 5000 end --murai
     if hasLoaded(asset) then return asset end
 
     request(asset, ...)
 
+    -- i hate fivem developers
+    lib.print.verbose(("Loading %s '%s' - remember to release it when done."):format(assetType, asset))
+
     return lib.waitFor(function()
         if hasLoaded(asset) then return asset end
-    end, ("failed to load %s '%s'"):format(assetType, asset), timeout)
+    end, ("failed to load %s '%s' - this is likely caused by unreleased assets"):format(assetType, asset), timeout or 10000)
 end
 
 return lib.streamingRequest
