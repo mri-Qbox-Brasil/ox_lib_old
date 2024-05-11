@@ -1,5 +1,3 @@
-# Versão buildada da ox_lib para a MRI_QBOX
-
 # ox_lib
 
 A FiveM library and resource implementing reusable modules, methods, and UI elements.
