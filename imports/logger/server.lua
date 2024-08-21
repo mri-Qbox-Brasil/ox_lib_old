@@ -291,7 +291,7 @@ if service == 'loki' then
 end
 
 if service == 'fivemerr' then
-    local key = GetConvar('fivemerr:key', '')
+    local key = GetConvar('fivemerr:apiToken', '')
 
     if key ~= '' then
         local endpoint = 'https://api.fivemerr.com/v1/logs'
